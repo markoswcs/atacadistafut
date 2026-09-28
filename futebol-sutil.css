@@ -1,0 +1,11 @@
+/* Geometria esportiva abstrata: linhas, arcos e ritmo visual. */
+.hero { isolation: isolate; }
+.hero::before { content: ""; position: absolute; width: 46vw; height: 46vw; min-width: 390px; min-height: 390px; right: -20vw; bottom: -26vw; border: 2px solid rgba(22, 131, 75, .32); border-radius: 50%; box-shadow: 0 0 0 54px rgba(22, 131, 75, .06); pointer-events: none; z-index: 0; }
+.hero::after { content: ""; position: absolute; right: 5%; top: 12%; width: 34%; height: 2px; background: #e46f50; transform: rotate(-32deg); box-shadow: 0 38px 0 #16834b, 0 76px 0 #d9ecd9; opacity: .8; pointer-events: none; z-index: 0; }
+.hero-copy, .hero-dashboard { z-index: 2; }
+.hero h1 { color: #123825 !important; }
+.hero h1 strong { color: #157646 !important; }
+.closing { background: linear-gradient(125deg, #1d6040, #0a321f 72%); }
+.closing h2 { color: #ffffff; }
+.closing h2 em { color: #d6f26e; }
+@media (max-width: 820px) { .hero::after { width: 48%; right: -6%; } }
